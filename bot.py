@@ -75,7 +75,7 @@ async def chat(ctx, chat):#chats with input as arg
   
 @bot.command()
 async def ask(ctx, query):
-  app_id = '3A2278-X4Y8XPAWAQ'
+  app_id = #your wolframalpha api id
   client = wolframalpha.Client(app_id)
   res = client.query(query)
   answer = next(res.results).text
